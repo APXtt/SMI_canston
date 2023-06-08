@@ -27,7 +27,6 @@ environ.Env.read_env(
 )
 
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -127,9 +126,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/' # 배포할 때 staticroot로 바꾸셈
-STATICFILES_DIRS = []
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+    '/home/ubuntu/SMI_canston/static'
+]
+STATIC_ROOT = '/home/ubuntu/SMI_canston/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
