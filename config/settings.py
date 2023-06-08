@@ -131,7 +131,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
     '/home/ubuntu/SMI_canston/static'
 ]
-STATIC_ROOT = '/home/ubuntu/SMI_canston/static'
+STATIC_ROOT = '/home/ubuntu/SMI_canston/.static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
