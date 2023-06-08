@@ -31,7 +31,7 @@ function send() {
                         <p class="small mb-0">${tmp}</p>
                         </div>
                         <img
-                        src="{% static 'chatbot/humanicon.png' %}"
+                        src="{% static 'chatbot/human icon.png' %}"
                         alt="avatar 1"
                         style="width: 45px; height: 100%"
                         />`;

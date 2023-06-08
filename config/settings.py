@@ -127,11 +127,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/staticroot/' # 배포할 때 staticroot로 바꾸셈
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
-STATIC_ROOT = 'staticroot/'
+STATIC_URL = '/static/' # 배포할 때 staticroot로 바꾸셈
+STATICFILES_DIRS = []
+STATIC_ROOT = BASE_DIR / 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
